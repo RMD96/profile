@@ -1,0 +1,230 @@
+h1,
+h2,
+h3 {
+  color: rgb(212, 206, 206);
+  text-align: center;
+  font-size: 40px;
+  -webkit-text-stroke: 1px black; /* specify the stroke width and color */
+}
+header {
+  font-size: 5;
+  margin-top: 90px;
+}
+body {
+  background-color: rgb(0, 40, 57);
+  font-family: Futura, Arial, sans-serif;
+  text-align: center;
+}
+.header-img-info {
+  background-image: url("/images/YO_PERFIL.jpg");
+  background-size: cover;
+  background-position: center -680px;
+  background-repeat: no-repeat;
+
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly; /* center the navigation menu */
+}
+
+nav ul li {
+  padding: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eeeaea;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+/* Add a box shadow to all div elements */
+div:not(.container) {
+  border: 1px solid #000000;
+  background-color: #8482ac;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-bottom: 7%;
+  padding-top: 7%;
+  margin: 2%;
+  border-radius: 15px;
+}
+
+/* Add a transition to the box shadow */
+div {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Change the box shadow on hover */
+div:hover:not(.container) {
+  border-color: #333;
+  background-color: #c0d8ff;
+  box-shadow: 15px 10px 10px rgba(16, 44, 154, 0.471);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Style the form labels */
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the form submit button */
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Change the background color of the submit button on hover */
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+
+/* Style the li elements */
+li {
+  margin: 0 10px;
+}
+
+/* Style the a elements */
+a {
+  text-decoration: none;
+  color: #000000;
+  align-items: center;
+}
+
+/* Change the color of the a elements on hover */
+a:hover {
+  color: #343f5e;
+}
+
+#about li {
+  display: flex;
+  font-size: medium;
+}
+
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#follow a {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+#follow h2 {
+  margin-bottom: 20px;
+}
+#follow ul {
+  list-style: none;
+  display: flex;
+}
+#follow li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+#follow a:hover {
+  background-color: #c2ccc2;
+  color: #555;
+  font-size: 14px;
+}
+#follow a:active {
+  background-color: #6d726d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#follow li img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+#follow li img:hover {
+  transform: scale(1.2);
+}
+#follow li a {
+  text-align: center;
+  transition: font-size 0.3s ease-in-out;
+}
+#contact {
+  color: rgb(212, 206, 206);
+  align-items: center;
+  font-weight: bolder;
+}
